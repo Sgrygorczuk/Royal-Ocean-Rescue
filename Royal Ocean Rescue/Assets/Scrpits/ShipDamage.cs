@@ -44,5 +44,10 @@ public class ShipDamage : MonoBehaviour
                 }
             }
         }
+        else if (hitBox.CompareTag($"Fix"))
+        {
+            _spriteRenderer.sprite = health3;
+            health = 3;
+        }
     }
 }

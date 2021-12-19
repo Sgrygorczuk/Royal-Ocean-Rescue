@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Hurt
   - Cannon
+  - Fix
+  - Person
   layers:
   - Default
   - TransparentFX

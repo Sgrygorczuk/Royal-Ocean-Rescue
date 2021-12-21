@@ -10,12 +10,13 @@ public class ShipDamage : MonoBehaviour
     
     private SpriteRenderer _spriteRenderer;
     private BoxCollider2D _boxCollider2D;
+    private Animator _animator;
 
     private void Awake()
     {
         _spriteRenderer = gameObject.GetComponentInChildren<SpriteRenderer>();
         _boxCollider2D = GetComponent<BoxCollider2D>();
-
+        _animator = GetComponent<Animator>();
         _spriteRenderer.sprite = health3;
     }
 
@@ -24,6 +25,7 @@ public class ShipDamage : MonoBehaviour
         if (hitBox.CompareTag($"Hurt"))
         {
             health--;
+            _animator.Play($"NewHurtAnimation");
             switch (health)
             {
                 case 2:
@@ -48,6 +50,7 @@ public class ShipDamage : MonoBehaviour
         {
             _spriteRenderer.sprite = health3;
             health = 3;
+            _animator.Play($"NewHealAnimaton");
         }
     }
 }

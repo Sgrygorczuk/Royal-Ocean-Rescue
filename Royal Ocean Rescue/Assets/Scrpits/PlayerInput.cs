@@ -9,6 +9,7 @@ public class PlayerInput : MonoBehaviour
     {
         _playerController = GetComponent<PlayerController>();
         _playerShoot = GetComponent<PlayerShoot>();
+        
     }
 
     // Update is called once per frame

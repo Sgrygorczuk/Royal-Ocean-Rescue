@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &693392609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 693392610}
+  m_Layer: 0
+  m_Name: Rear
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &693392610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693392609}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.808, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 820167450293786359}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820167450293786363
 GameObject:
   m_ObjectHideFlags: 0
@@ -16,6 +46,8 @@ GameObject:
   - component: {fileID: 820167450293786361}
   - component: {fileID: 820167450293786362}
   - component: {fileID: 1203774984338844697}
+  - component: {fileID: 307490731}
+  - component: {fileID: 1599158094}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -36,6 +68,7 @@ Transform:
   m_Children:
   - {fileID: 820167450495004299}
   - {fileID: 8118813470769925358}
+  - {fileID: 693392610}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73,7 +106,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0049031675, y: -0.044128492}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -84,7 +117,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.3233648, y: 0.87251806}
   m_EdgeRadius: 0
 --- !u!96 &820167450293786357
 TrailRenderer:
@@ -396,8 +429,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baacc47323c6f0dab82927a527d886dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cannon: {fileID: 0}
+  cannon: {fileID: 2922972805597967828, guid: e80b65ba55e87a01fa7c5d47417e656e, type: 3}
   spawnPoint: {fileID: 8118813470769925358}
+--- !u!114 &307490731
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820167450293786363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ef95135be93df2129cc3527eadc4b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rowBoat: {fileID: 6754034018542765665, guid: 77c895c8a9d472b55b6e7d8a7e174076, type: 3}
+  mainBoatRear: {fileID: 693392610}
+--- !u!95 &1599158094
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820167450293786363}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e28b18749a7f18e38ed9a9382117db1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &820167450495004300
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6760842783892237131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.167, y: -0.118, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 820167450293786359}

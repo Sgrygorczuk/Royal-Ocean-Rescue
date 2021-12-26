@@ -8,6 +8,7 @@ TagManager:
   - Cannon
   - Fix
   - Person
+  - Ship
   layers:
   - Default
   - TransparentFX

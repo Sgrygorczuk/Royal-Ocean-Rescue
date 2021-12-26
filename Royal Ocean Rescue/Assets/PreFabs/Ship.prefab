@@ -50,7 +50,7 @@ GameObject:
   - component: {fileID: 1599158094}
   m_Layer: 0
   m_Name: Ship
-  m_TagString: Untagged
+  m_TagString: Ship
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -444,6 +444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rowBoat: {fileID: 6754034018542765665, guid: 77c895c8a9d472b55b6e7d8a7e174076, type: 3}
+  _original: {fileID: 0}
   mainBoatRear: {fileID: 693392610}
 --- !u!95 &1599158094
 Animator:

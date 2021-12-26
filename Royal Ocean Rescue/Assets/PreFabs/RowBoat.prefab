@@ -132,7 +132,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.003132999, y: 0.0031329393}
+  m_Offset: {x: -0.00011494756, y: -0.016276002}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -143,7 +143,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16662991, y: 0.25435305}
+  m_Size: {x: 0.25324136, y: 0.39958453}
   m_EdgeRadius: 0
 --- !u!50 &9013877635286395916
 Rigidbody2D:
@@ -182,9 +182,12 @@ MonoBehaviour:
   shipRotation: {fileID: 0}
   ownRear: {fileID: 1823862638548049356}
   rigidbody2D: {fileID: 0}
+  person: {fileID: 6544070745111153872, guid: 441a30865b0fd69949aa7b0b2b179507, type: 3}
+  health: 2
   spriteRenderer: {fileID: 6754034018382648158}
   healedSprite: {fileID: 21300000, guid: 25a93a8d87dc193128102e0da66baaff, type: 3}
   damagedSprite: {fileID: 21300000, guid: af44da904b184ae68831e6e982578bb5, type: 3}
+  _position: 0
 --- !u!96 &6754034018542765668
 TrailRenderer:
   serializedVersion: 2
@@ -479,7 +482,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7429302088084998528}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.359, z: 0}
+  m_LocalPosition: {x: 0, y: -0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6754034018542765667}

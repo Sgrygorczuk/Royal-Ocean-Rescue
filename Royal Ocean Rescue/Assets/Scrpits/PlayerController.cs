@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
          return;
         }
         
-        if (_velocityVsUp < -maxSpeed/10 && _accelerationInput < 0)
+        if (_velocityVsUp < -maxSpeed/5 && _accelerationInput < 0)
         {
             return;
         }

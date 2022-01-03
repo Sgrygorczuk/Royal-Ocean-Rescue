@@ -9,6 +9,7 @@ TagManager:
   - Fix
   - Person
   - Ship
+  - DropOff
   layers:
   - Default
   - TransparentFX

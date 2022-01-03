@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PersonRescue : MonoBehaviour
@@ -19,7 +18,6 @@ public class PersonRescue : MonoBehaviour
         if (hitBox.CompareTag($"Person"))
         {
             _rear = _original.transform.childCount == 0 ? mainBoatRear : _original.transform.GetChild(_original.transform.childCount - 1).gameObject.GetComponent<RowBoat>().ownRear;
-            _rowBoat.SetPreFabData(_rear, transform, _rigidbody2D, _original.transform.childCount, _original);
             var instantiate = Instantiate(_rowBoat, hitBox.transform.position, Quaternion.identity);
             instantiate.SetPreFabData(_rear, transform, _rigidbody2D, _original.transform.childCount, _original);
             instantiate.transform.SetParent(_original.transform);

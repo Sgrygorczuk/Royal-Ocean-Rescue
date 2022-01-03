@@ -1,23 +1,21 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
-    private Rigidbody2D _rigidbody2D;
     private Animator _animator;
     private bool _isExploding = false;
     public float timeRemaining = 0;
-    
+    private Transform _position;
+
     private void Awake()
     {
-        _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
     }
 
-    public void SetSpeed(Vector2 speed)
+    public void SetPosition(Transform position)
     {
-        _rigidbody2D.velocity = speed;
+        _position = position;
     }
 
     private void Update()
@@ -25,6 +23,7 @@ public class Cannon : MonoBehaviour
         if (_isExploding) return;
         if (timeRemaining > 0)
         {
+            transform.localScale *= 0.99f;
             timeRemaining -= Time.deltaTime;
         }
         else
@@ -32,10 +31,15 @@ public class Cannon : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    
+    private void FixedUpdate()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _position.position, Time.deltaTime);
+
+    }
 
     public void Explode()
     {
-        _rigidbody2D.velocity = Vector2.zero;
         _animator.Play($"CannonExplode");
         _isExploding = true;
         StartCoroutine(ExplodeDestroy());

@@ -32,16 +32,7 @@ public class RowBoat : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (transform.position == shipToFollow.position)
-        {
-            return;
-        }
-
-        //transform.position = Mathf.Abs(rigidbody2D.velocity.magnitude) < 1 ? Vector3.Lerp(transform.position, shipToFollow.position, Time.deltaTime) : Vector3.Lerp(transform.position, shipToFollow.position, Time.deltaTime * rigidbody2D.velocity.magnitude);;
-        transform.position = Mathf.Abs(rigidbody2D.velocity.magnitude) < 1
-            ? Vector3.MoveTowards(transform.position, shipToFollow.position, Time.deltaTime)
-            : Vector3.MoveTowards(transform.position, shipToFollow.position,
-                Time.deltaTime * rigidbody2D.velocity.magnitude * 3);
+        transform.position = Mathf.Abs(rigidbody2D.velocity.magnitude) < 1 ? Vector3.MoveTowards(transform.position, shipToFollow.position, Time.deltaTime) : Vector3.MoveTowards(transform.position, shipToFollow.position, Time.fixedTime);
         transform.rotation = shipRotation.rotation;
 
     }
@@ -71,31 +62,23 @@ public class RowBoat : MonoBehaviour
             _animator.Play($"NewHealAnimaton");
         }
         
-        if (health == 0)
+        if (health == 0 || hitBox.CompareTag($"DropOff"))
         {
-            if (_origin.transform.childCount > 1)
+            if (_origin.transform.childCount > 1 && _position != _origin.transform.childCount - 1)
             {
-                if (_position == _origin.transform.childCount - 1)
-                {
-                    Instantiate(person, transform.position, Quaternion.identity);
-                    Destroy(gameObject);
-                }
-                else
-                {
-                    _origin.transform.GetChild(_position + 1).gameObject.GetComponent<RowBoat>().UpdateRear(shipToFollow);
+                _origin.transform.GetChild(_position + 1).gameObject.GetComponent<RowBoat>().UpdateRear(shipToFollow);
                     for (var i = _position; i < _origin.transform.childCount; i++)
                     {
                         _origin.transform.GetChild(i).gameObject.GetComponent<RowBoat>().UpdateId(i - 1);
                     }
-                    Instantiate(person, transform.position, Quaternion.identity);
-                    Destroy(gameObject);
-                }
             }
-            else
+
+            if (health == 0)
             {
-                Instantiate(person, transform.position, Quaternion.identity);
-                Destroy(gameObject);
+                var instantiate = Instantiate(person, transform.position, Quaternion.identity);
+                instantiate.GetComponent<Rigidbody2D>().velocity = -_origin.transform.parent.GetComponent<Rigidbody2D>().velocity / 2;
             }
+            Destroy(gameObject);
         }
     }
 }

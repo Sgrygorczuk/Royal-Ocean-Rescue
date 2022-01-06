@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 
@@ -15,7 +16,10 @@ public class RowBoat : MonoBehaviour
     public Sprite damagedSprite;
     private GameObject _origin;
     public int _position;
-
+    public AudioSource death;
+    public AudioSource celebrate;
+    private bool isDestoryed = false;
+    
     private void Awake()
     {
         _animator = GetComponent<Animator>();
@@ -49,8 +53,14 @@ public class RowBoat : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D hitBox)
     {
-        if (hitBox.CompareTag($"Hurt"))
+        if(isDestoryed){return;}
+        
+        if (hitBox.CompareTag($"Hurt") || hitBox.CompareTag($"Cannon"))
         {
+            if (hitBox.CompareTag($"Cannon"))
+            {
+                hitBox.GetComponent<Cannon>().Explode();
+            }
             health--;
             _animator.Play($"NewHurtAnimation");
             spriteRenderer.sprite = damagedSprite;
@@ -61,24 +71,41 @@ public class RowBoat : MonoBehaviour
             health = 2;
             _animator.Play($"NewHealAnimaton");
         }
-        
-        if (health == 0 || hitBox.CompareTag($"DropOff"))
-        {
-            if (_origin.transform.childCount > 1 && _position != _origin.transform.childCount - 1)
-            {
-                _origin.transform.GetChild(_position + 1).gameObject.GetComponent<RowBoat>().UpdateRear(shipToFollow);
-                    for (var i = _position; i < _origin.transform.childCount; i++)
-                    {
-                        _origin.transform.GetChild(i).gameObject.GetComponent<RowBoat>().UpdateId(i - 1);
-                    }
-            }
 
-            if (health == 0)
+        if (health != 0 && !hitBox.CompareTag($"DropOff")) return;
+        isDestoryed = true;
+        if (_origin.transform.childCount > 1 && _position != _origin.transform.childCount - 1)
+        {
+            _origin.transform.GetChild(_position + 1).gameObject.GetComponent<RowBoat>().UpdateRear(shipToFollow);
+            for (var i = _position; i < _origin.transform.childCount; i++)
             {
-                var instantiate = Instantiate(person, transform.position, Quaternion.identity);
-                instantiate.GetComponent<Rigidbody2D>().velocity = -_origin.transform.parent.GetComponent<Rigidbody2D>().velocity / 2;
+                _origin.transform.GetChild(i).gameObject.GetComponent<RowBoat>().UpdateId(i - 1);
             }
-            Destroy(gameObject);
         }
+
+        float time = 0;
+        if (health == 0)
+        {
+            var instantiate = Instantiate(person, transform.position, Quaternion.identity);
+            instantiate.GetComponent<Rigidbody2D>().velocity = -_origin.transform.parent.GetComponent<Rigidbody2D>().velocity / 2;
+            death.Play();
+            time = death.clip.length;
+        }
+        else
+        {
+            celebrate.Play();
+            time = celebrate.clip.length;
+        }
+
+        StartCoroutine(DestroyBoat(time));
+    }
+
+    private IEnumerator DestroyBoat(float time)
+    {
+        transform.transform.localScale = Vector3.zero;
+        transform.GetComponent<TrailRenderer>().enabled = false;
+        yield return new WaitForSeconds(time);
+        Destroy(gameObject);
+        
     }
 }

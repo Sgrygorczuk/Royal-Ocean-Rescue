@@ -14,14 +14,21 @@ public class TalkController : MonoBehaviour
     private bool _breakOut = false;
     public bool isTalking = false;
     public float dialogueSpeed;
+    public AudioSource audioSource;
 
     private void Awake()
     {
         NextSentence();
     }
 
+    public void PlayAudio()
+    {
+        audioSource.Play();
+    }
+    
     public void LoadText(string[] newSentences, Sprite sprite)
     {
+        
         index = 0;
         sentences = newSentences;
         character.sprite = sprite;
@@ -53,18 +60,23 @@ public class TalkController : MonoBehaviour
 
     private IEnumerator WriteSentence()
     {
-        foreach (var character in sentences[index].ToCharArray())
+        foreach (var dialogueTextText in sentences[index].ToCharArray())
         {
             if (_breakOut)
             {
                 _breakOut = false;
                 index++;
-                if (index >= sentences.Length) yield break;
                 dialogueText.text = "";
+                if (index >= sentences.Length)
+                {
+                    transform.GetComponent<PlayerInput>().EndDialogue();
+                    isTalking = false;
+                    yield break;
+                }
                 StartCoroutine(WriteSentence());
                 yield break;
             }
-            dialogueText.text += character;
+            dialogueText.text += dialogueTextText;
             yield return new WaitForSeconds(dialogueSpeed);
         }
         isTalking = false;

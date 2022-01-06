@@ -43,10 +43,10 @@ public class PlayerInput : MonoBehaviour
             {
                 if (Input.GetButtonDown("Fire1"))
                 {
+                    _talkController.PlayAudio();
                     if (_talkController.Done())
                     {
-                        gameState = 0;
-                        _talkController.SetCanvas(false);
+                        EndDialogue();
                         break;
                     }
                     _talkController.NextSentence();
@@ -55,6 +55,12 @@ public class PlayerInput : MonoBehaviour
                 break;
             }
         }
+    }
+
+    public void EndDialogue()
+    {
+        gameState = 0;
+        _talkController.SetCanvas(false);
     }
 
     private void OnTriggerEnter2D(Collider2D hitBox)

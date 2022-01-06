@@ -20,9 +20,16 @@ public class PlayerShoot : MonoBehaviour
     public void SpawnCannon()
     {
         if (original.transform.childCount != 0) return;
-        var instantiate = Instantiate(cannon, spawnPointRight.parent.position, Quaternion.identity);
-        instantiate.SetPosition(_shootingDirection ? spawnPointRight : spawnPointLeft);
+        var instantiate = Instantiate(cannon, _shootingDirection ? spawnPointRight.position : spawnPointLeft.position, Quaternion.identity);
         instantiate.transform.SetParent(original.transform);
+        //Make sure it moves in the direction that the ship is turned towards 
+        instantiate.SetPosition(_shootingDirection
+            ? new Vector2(Mathf.Cos((Mathf.PI / 180) * transform.rotation.eulerAngles.z),
+                Mathf.Sin((Mathf.PI / 180) * transform.rotation.eulerAngles.z))
+            : new Vector2(-Mathf.Cos((Mathf.PI / 180) * transform.rotation.eulerAngles.z),
+                -Mathf.Sin((Mathf.PI / 180) * transform.rotation.eulerAngles.z)));
+        //Make sure it moves as fast as the ship was moving
+        instantiate.GetComponent<Rigidbody2D>().velocity = transform.GetComponent<Rigidbody2D>().velocity;
     }
 
     

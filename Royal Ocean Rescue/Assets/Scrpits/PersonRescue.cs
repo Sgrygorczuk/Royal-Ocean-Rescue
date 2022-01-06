@@ -7,6 +7,7 @@ public class PersonRescue : MonoBehaviour
     public Transform mainBoatRear;
     private Transform _rear;
     private Rigidbody2D _rigidbody2D;
+    public AudioSource audioSource;
     
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class PersonRescue : MonoBehaviour
     {
         if (hitBox.CompareTag($"Person"))
         {
+            audioSource.Play();
             _rear = _original.transform.childCount == 0 ? mainBoatRear : _original.transform.GetChild(_original.transform.childCount - 1).gameObject.GetComponent<RowBoat>().ownRear;
             var instantiate = Instantiate(_rowBoat, hitBox.transform.position, Quaternion.identity);
             instantiate.SetPreFabData(_rear, transform, _rigidbody2D, _original.transform.childCount, _original);

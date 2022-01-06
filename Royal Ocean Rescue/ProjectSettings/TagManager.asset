@@ -10,6 +10,8 @@ TagManager:
   - Person
   - Ship
   - DropOff
+  - TalkZone
+  - RowBoat
   layers:
   - Default
   - TransparentFX

@@ -6,14 +6,17 @@ public class Cannon : MonoBehaviour
     private Animator _animator;
     private bool _isExploding = false;
     public float timeRemaining = 0;
-    private Transform _position;
+    private Vector3 _position;
+    public float speed = 2;
+    public AudioSource audioSource;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        transform.tag = "Cannon";
     }
 
-    public void SetPosition(Transform position)
+    public void SetPosition(Vector2 position)
     {
         _position = position;
     }
@@ -34,20 +37,24 @@ public class Cannon : MonoBehaviour
     
     private void FixedUpdate()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _position.position, Time.deltaTime);
+        if(_isExploding) return;
+        transform.position += _position * speed * Time.deltaTime;
 
     }
 
     public void Explode()
     {
+        transform.GetComponent<CircleCollider2D>().enabled = false;
+        transform.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         _animator.Play($"CannonExplode");
+        audioSource.Play();
         _isExploding = true;
         StartCoroutine(ExplodeDestroy());
     }
     
     private IEnumerator ExplodeDestroy()
     {
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(gameObject);
     }
 }

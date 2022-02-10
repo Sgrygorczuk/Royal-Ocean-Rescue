@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -10,6 +11,11 @@ public class MainMenu : MonoBehaviour
     public Animator animator;
     private bool goingUp = false;
     private float alpha = 1;
+
+    private void Start()
+    {
+        
+    }
 
     // Update is called once per frame
     void Update()

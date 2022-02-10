@@ -1,9 +1,9 @@
-using System;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
 
+    //===== Adjustable Speed Metrics 
     public float drift = 0.95f;
     public float acceleration = 30.0f;
     public float turnRate = 3.5f;

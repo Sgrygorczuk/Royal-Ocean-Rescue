@@ -13,11 +13,11 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-39333
+39415
 Successfully changed project path to: /home/sebastian/Documents/GitHub/Royal-Ocean-Rescue/Royal Ocean Rescue
 /home/sebastian/Documents/GitHub/Royal-Ocean-Rescue/Royal Ocean Rescue
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 50.66 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 52.93 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.5f1 (8095aa901b9b)
 [Subsystems] Discovering subsystems at path /home/sebastian/Unity/2020.3.5f1/Editor/Data/Resources/UnitySubsystems
@@ -33,427 +33,488 @@ coverage GL_ARB_program_interface_query GL_ARB_provoking_vertex GL_ARB_query_buf
 rgb32 GL_ARB_texture_buffer_range GL_ARB_texture_compression_bptc GL_ARB_texture_compression_rgtc GL_ARB_texture_cube_map_array GL_ARB_texture_filter_anisotropic GL_ARB_texture_float GL_ARB_texture_gather GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_multisample GL_ARB_texture_non_power_of_two GL_ARB_texture_query_levels GL_ARB_texture_query_lod GL_ARB_texture_rectangle GL_ARB_texture_rg GL_ARB_texture_rgb10_a2ui GL_ARB_texture_stencil8 GL_ARB_texture_storage GL_ARB_texture_storage_multisample GL_ARB_texture_swizzle GL_ARB_texture_view GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_transform_feedback_instanced GL_ARB_transform_feedback_overflow_query GL_ARB_uniform_buffer_object GL_ARB_vertex_array_bgra GL_ARB_vertex_array_object GL_ARB_vertex_attrib_64bit GL_ARB_vertex_attrib_binding GL_ARB_vertex_buffer_object GL_ARB_vertex_shader GL_ARB_vertex_type_10f_11f_11f_rev GL_ARB_vertex_type_2_10_10_10_rev GL_ARB_viewport_array GL_ATI_blend_equation_separate GL_ATI_texture_flo
 at GL_EXT_EGL_image_storage GL_EXT_EGL_sync GL_EXT_abgr GL_EXT_blend_equation_separate GL_EXT_demote_to_helper_invocation GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_framebuffer_object GL_EXT_framebuffer_sRGB GL_EXT_packed_depth_stencil GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_polygon_offset_clamp GL_EXT_provoking_vertex GL_EXT_shader_framebuffer_fetch GL_EXT_shader_framebuffer_fetch_non_coherent GL_EXT_shader_integer_mix GL_EXT_shader_samples_identical GL_EXT_texture_array GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_compression_s3tc GL_EXT_texture_filter_anisotropic GL_EXT_texture_integer GL_EXT_texture_sRGB GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_decode GL_EXT_texture_shadow_lod GL_EXT_texture_shared_exponent GL_EXT_texture_snorm GL_EXT_texture_swizzle GL_EXT_timer_query GL_EXT_transform_feedback GL_EXT_vertex_array_bgra GL_EXT_vertex_attrib_64bit GL_IBM
 _multimode_draw_arrays GL_INTEL_conservative_rasterization GL_INTEL_performance_query GL_INTEL_shader_atomic_float_minmax GL_INTEL_shader_integer_functions2 GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_KHR_context_flush_control GL_KHR_debug GL_KHR_no_error GL_KHR_parallel_shader_compile GL_KHR_robust_buffer_access_behavior GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_KHR_texture_compression_astc_sliced_3d GL_MESA_framebuffer_flip_y GL_MESA_pack_invert GL_MESA_shader_integer_functions GL_MESA_texture_signed_rgba GL_NV_compute_shader_derivatives GL_NV_conditional_render GL_NV_depth_clamp GL_NV_fragment_shader_interlock GL_NV_packed_depth_stencil GL_NV_texture_barrier GL_OES_EGL_image GL_S3_s3tc
-OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle -2100164608
+OPENGL LOG: Creating OpenGL 4.6 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1800424448
 Initialize mono
 Mono path[0] = '/home/sebastian/Unity/2020.3.5f1/Editor/Data/Managed'
 Mono path[1] = '/home/sebastian/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/home/sebastian/Unity/2020.3.5f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56566
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56795
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/sebastian/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /home/sebastian/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /home/sebastian/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: /home/sebastian/Unity/2020.3.5f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001213 seconds.
+Registered in 0.001120 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 47.03 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 47.32 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.545 seconds
+- Completed reload, in  1.526 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000756 seconds.
+Registered in 0.000723 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 45.42 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 45.16 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.958 seconds
+- Completed reload, in  0.995 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler after 0.01 seconds
-Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2027 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 88.3 MB.
-System memory in use after: 88.2 MB.
+System memory in use after: 88.3 MB.
 
 Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2471.
-Total: 3.329663 ms (FindLiveObjects: 0.280668 ms CreateObjectMapping: 0.086553 ms MarkObjects: 2.728580 ms  DeleteObjects: 0.232717 ms)
+Total: 3.573370 ms (FindLiveObjects: 0.392537 ms CreateObjectMapping: 0.094722 ms MarkObjects: 2.834768 ms  DeleteObjects: 0.249989 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scrpits/MainMenu.cs
-  artifactKey: Guid(7f4c3cf4cbfd24f75bc4d05a186cc1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scrpits/MainMenu.cs using Guid(7f4c3cf4cbfd24f75bc4d05a186cc1fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5afb8bea898bf9bab702d11410ff0a8b') in 0.003601 seconds
-  Import took 0.007129 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000941 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.66 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.884 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.8 MB.
-System memory in use after: 86.8 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2475.
-Total: 2.874989 ms (FindLiveObjects: 0.227870 ms CreateObjectMapping: 0.066338 ms MarkObjects: 2.450916 ms  DeleteObjects: 0.127880 ms)
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/crew (1).png
+  artifactKey: Guid(1591c96405869bc108170a676895ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/crew (1).png using Guid(1591c96405869bc108170a676895ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a49e917be7e9f1c50d397a2e8af03bc5') in 0.064927 seconds
+  Import took 0.069043 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 82.796555 seconds.
-  path: Assets/Scrpits/Exit Timed.cs
-  artifactKey: Guid(b8ceacbaded9904a9ba43754bb4f959c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scrpits/Exit Timed.cs using Guid(b8ceacbaded9904a9ba43754bb4f959c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '627d770b43d79393428758a5f506b354') in 0.003109 seconds
-  Import took 0.006220 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001096 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.876 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 86.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2479.
-Total: 3.123645 ms (FindLiveObjects: 0.221795 ms CreateObjectMapping: 0.082595 ms MarkObjects: 2.679232 ms  DeleteObjects: 0.138269 ms)
+  Time since last request: 0.000257 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/crew (3).png
+  artifactKey: Guid(261e353b1b0d7b9ecb72cbc26dac4647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/crew (3).png using Guid(261e353b1b0d7b9ecb72cbc26dac4647) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '016beaaa1800399ae17281ba3b11e21b') in 0.004242 seconds
+  Import took 0.007428 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.543639 seconds.
-  path: Assets/Scrpits/ExitTimed.cs
-  artifactKey: Guid(b8ceacbaded9904a9ba43754bb4f959c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scrpits/ExitTimed.cs using Guid(b8ceacbaded9904a9ba43754bb4f959c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e220dc548ca38c0bc0424ef02c2571') in 0.003412 seconds
-  Import took 0.006895 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001318 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.60 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.318 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 86.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2483.
-Total: 4.702666 ms (FindLiveObjects: 0.386566 ms CreateObjectMapping: 0.226338 ms MarkObjects: 3.892414 ms  DeleteObjects: 0.194274 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.000876 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.872 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 86.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2487.
-Total: 2.959643 ms (FindLiveObjects: 0.247698 ms CreateObjectMapping: 0.073688 ms MarkObjects: 2.509909 ms  DeleteObjects: 0.127054 ms)
+  Time since last request: 0.000180 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/crew (5).png
+  artifactKey: Guid(b3658fb4a775b4ce3b9f724c49dbcfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/crew (5).png using Guid(b3658fb4a775b4ce3b9f724c49dbcfcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e9171753a826dce2e4c1311087cbd3') in 0.003984 seconds
+  Import took 0.007551 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.075848 seconds.
-  path: Assets/Scenes/LevelOne.unity
-  artifactKey: Guid(544b99042e92e28179566883f917036c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/LevelOne.unity using Guid(544b99042e92e28179566883f917036c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7780b8f1a4d9fa1a120261b6f5bf1059') in 0.015349 seconds
-  Import took 0.020306 seconds .
+  Time since last request: 0.000173 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (14).png
+  artifactKey: Guid(76c987cd20a6197a2826fa366d0d36a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (14).png using Guid(76c987cd20a6197a2826fa366d0d36a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a381b367d5e61bd034f407e370192648') in 0.004804 seconds
+  Import took 0.008673 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 40.130754 seconds.
-  path: Assets/Scenes/TBC.unity
-  artifactKey: Guid(ceac2ecf490a2fee587daee1e65fd981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/TBC.unity using Guid(ceac2ecf490a2fee587daee1e65fd981) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8a5ada79b688a8963b56042fad94cc') in 0.001342 seconds
-  Import took 0.004858 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001267 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.61 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.890 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.48 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 86.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2491.
-Total: 3.098353 ms (FindLiveObjects: 0.218811 ms CreateObjectMapping: 0.076703 ms MarkObjects: 2.666205 ms  DeleteObjects: 0.134511 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.001005 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.54 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  0.930 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.46 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 86.9 MB.
-System memory in use after: 86.9 MB.
-
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2495.
-Total: 3.711047 ms (FindLiveObjects: 0.265275 ms CreateObjectMapping: 0.085132 ms MarkObjects: 3.149159 ms  DeleteObjects: 0.208765 ms)
+  Time since last request: 0.000144 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/flag (1).png
+  artifactKey: Guid(a5941a7f676ff64a9a8da10ae598325b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/flag (1).png using Guid(a5941a7f676ff64a9a8da10ae598325b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12cee05d673365eeebcedd36fe8f5126') in 0.004022 seconds
+  Import took 0.008218 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 66.942063 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
-  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e01d5edb5bbfad539ae80ef72154d2d9') in 0.137064 seconds
-  Import took 0.140795 seconds .
+  Time since last request: 0.000246 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/cannonMobile.png
+  artifactKey: Guid(dbb999a14d6a9471ea91eba9e9c3e009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/cannonMobile.png using Guid(dbb999a14d6a9471ea91eba9e9c3e009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae93a3305a05c6b5674f01bac1b5d388') in 0.005001 seconds
+  Import took 0.009237 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (2).png
+  artifactKey: Guid(eb5dc788dbd40723b889b8594c02be47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (2).png using Guid(eb5dc788dbd40723b889b8594c02be47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '981503b6ba80e2d651ba55da488b45d0') in 0.005316 seconds
+  Import took 0.009403 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/flag (6).png
+  artifactKey: Guid(7d13a57affdb34a7abe64292e26ef2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/flag (6).png using Guid(7d13a57affdb34a7abe64292e26ef2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746983b0d1af2945da655d87d7b034ba') in 0.005837 seconds
+  Import took 0.009679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (10).png
+  artifactKey: Guid(1f98e2ea69307d591908a1e9b347880c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (10).png using Guid(1f98e2ea69307d591908a1e9b347880c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f119610aa8a0b9bacd27491cd6369117') in 0.005483 seconds
+  Import took 0.009259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (11).png
+  artifactKey: Guid(adc033a19b775d73a97618d7dfdeb2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (11).png using Guid(adc033a19b775d73a97618d7dfdeb2ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a6d374d3b45ef6d8dcbe8e2289f956') in 0.005213 seconds
+  Import took 0.009085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (1).png
+  artifactKey: Guid(78eed0e2ff5ade65aa709f3c24b361fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (1).png using Guid(78eed0e2ff5ade65aa709f3c24b361fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0addfff0c16a50c951a8143f661f22df') in 0.005523 seconds
+  Import took 0.009877 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (12).png
+  artifactKey: Guid(e3b7cfc77a3a800eb87b1c69be4e4273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (12).png using Guid(e3b7cfc77a3a800eb87b1c69be4e4273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847de90e15adc8e6b95442a30598d71b') in 0.004961 seconds
+  Import took 0.008931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (8).png
+  artifactKey: Guid(26196a36dc15f1686970aa115ccf1e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (8).png using Guid(26196a36dc15f1686970aa115ccf1e69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c612de0f1576b1b00935a51c7a9377c') in 0.006599 seconds
+  Import took 0.010943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000236 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/flag (2).png
+  artifactKey: Guid(93de5384f0e723390952d95e4092d5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/flag (2).png using Guid(93de5384f0e723390952d95e4092d5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '304ae4f102912246a297cbc81a9ac712') in 0.004566 seconds
+  Import took 0.009313 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/pole.png
+  artifactKey: Guid(8f071aadf6eabe521a12e84e0376afff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/pole.png using Guid(8f071aadf6eabe521a12e84e0376afff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea049d3398cbb88ed197a224dc88f2f9') in 0.006324 seconds
+  Import took 0.010346 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000268 seconds.
-  path: Assets/Assets/Map/PNG/Retina/bridgeRope.png
-  artifactKey: Guid(3304d83fb1c6988c68a59374f1ca521f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/bridgeRope.png using Guid(3304d83fb1c6988c68a59374f1ca521f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2509f941ddea8c1d0d1472b206f75959') in 0.020133 seconds
-  Import took 0.024251 seconds .
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/cannonBall.png
+  artifactKey: Guid(7523147f932d36a5a87416092e5881ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/cannonBall.png using Guid(7523147f932d36a5a87416092e5881ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fa9b157d40549499e506a5b8df3b917') in 0.004501 seconds
+  Import took 0.008611 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg
-  artifactKey: Guid(f88677df267a41d6be1e7a6133e7d227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg using Guid(f88677df267a41d6be1e7a6133e7d227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0ec05941b0f3c7b64b4d4d58b8284af') in 0.004152 seconds
-  Import took 0.007986 seconds .
+  Time since last request: 0.000208 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/crew (2).png
+  artifactKey: Guid(3bc8b5130299776ef9cda239510c08e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/crew (2).png using Guid(3bc8b5130299776ef9cda239510c08e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6da9af498b53c7fe26069e6fa5bb0a5') in 0.004182 seconds
+  Import took 0.008165 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowSmall.png
-  artifactKey: Guid(b94f2e2948c6f05fc833e3396bd0f40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowSmall.png using Guid(b94f2e2948c6f05fc833e3396bd0f40c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95971870135e65f7ad7c779f966fc13f') in 0.008508 seconds
-  Import took 0.012385 seconds .
+  Time since last request: 0.000196 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/cannonLoose.png
+  artifactKey: Guid(cf9c53059db23841497604e8be4dd14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/cannonLoose.png using Guid(cf9c53059db23841497604e8be4dd14e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0a28ff7c6fe8b75546afe67bfdcfc7e') in 0.004402 seconds
+  Import took 0.008565 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000219 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowHead.png
-  artifactKey: Guid(5277c96b34818472fbee02163169297c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowHead.png using Guid(5277c96b34818472fbee02163169297c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37bcf50042a613c56e1aa351f5004a83') in 0.007030 seconds
-  Import took 0.010751 seconds .
+  Time since last request: 0.000209 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/flag (4).png
+  artifactKey: Guid(e5a6a9b9372a6741bb549cf7200a4a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/flag (4).png using Guid(e5a6a9b9372a6741bb549cf7200a4a13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62b8553304e90991cfc14ac4b674f19c') in 0.004695 seconds
+  Import took 0.008497 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (9).png
+  artifactKey: Guid(af24b91cd32f67db2b2c7acf7fe09356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (9).png using Guid(af24b91cd32f67db2b2c7acf7fe09356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a709006e7034ddf8a5b373ea5649a05') in 0.005546 seconds
+  Import took 0.009645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (13).png
+  artifactKey: Guid(abc4e98a597de2d04964ac69a9be9d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (13).png using Guid(abc4e98a597de2d04964ac69a9be9d68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e0a1ce23ab690d40ca34a777c6f6cf') in 0.005216 seconds
+  Import took 0.009257 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (1).png
+  artifactKey: Guid(5b6ad889e1c564ff2b8a915f96e36946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (1).png using Guid(5b6ad889e1c564ff2b8a915f96e36946) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc98853649a49b5c437fbf539893b699') in 0.005270 seconds
+  Import took 0.009187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (5).png
+  artifactKey: Guid(8ca367a25f46da872b99199c809e0ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (5).png using Guid(8ca367a25f46da872b99199c809e0ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1976a79e763f237c6440fbcacc06221d') in 0.006050 seconds
+  Import took 0.010187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (2).png
+  artifactKey: Guid(0448bd199cc90bc5595f2d4609ae261b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (2).png using Guid(0448bd199cc90bc5595f2d4609ae261b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2784de77d11ebb0930e4d5be9b328511') in 0.005894 seconds
+  Import took 0.009552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (4).png
+  artifactKey: Guid(dd37a9971aadc54bda714311595b8d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (4).png using Guid(dd37a9971aadc54bda714311595b8d08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c5841902111c43031dc20a13276f2b9') in 0.004953 seconds
+  Import took 0.008954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (17).png
+  artifactKey: Guid(8bd07382ba8939fad92bd7ec2d9bd52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (17).png using Guid(8bd07382ba8939fad92bd7ec2d9bd52e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e50fa9b92919fddba9c5c002319c4d4e') in 0.006020 seconds
+  Import took 0.009911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (18).png
+  artifactKey: Guid(ce2379275daa2f14ca51c326013a0ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (18).png using Guid(ce2379275daa2f14ca51c326013a0ad6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0743269f765cb915d044d2bec358c7ac') in 0.005375 seconds
+  Import took 0.010148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (19).png
+  artifactKey: Guid(a1cfb66a00e4b127a94a800f8a128d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (19).png using Guid(a1cfb66a00e4b127a94a800f8a128d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2ce86c42d8f51df132963dc028f98b0') in 0.006380 seconds
+  Import took 0.010500 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000212 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowCrossing.png
-  artifactKey: Guid(51054668f4bb5768c807163806015251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowCrossing.png using Guid(51054668f4bb5768c807163806015251) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48ae8da418b1724ee02770ec160c2fd') in 0.007083 seconds
-  Import took 0.011366 seconds .
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (2).png
+  artifactKey: Guid(5859aa16efcb969cdbdf0fc7a664c752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (2).png using Guid(5859aa16efcb969cdbdf0fc7a664c752) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909a38c4cf8701c6cbe55b316a91b88a') in 0.006384 seconds
+  Import took 0.010439 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000165 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset
-  artifactKey: Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset using Guid(125cb55b44b24c4393181402bc6200e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '405adb1b0659f344a6f73b2835ee70ba') in 0.023235 seconds
-  Import took 0.027405 seconds .
+  Time since last request: 0.000201 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/crew (6).png
+  artifactKey: Guid(ebd6c3534ec1a7389938f687d5186212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/crew (6).png using Guid(ebd6c3534ec1a7389938f687d5186212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c361883fdbb97eb0a06944144173dc36') in 0.005188 seconds
+  Import took 0.009490 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000162 seconds.
-  path: Assets/Assets/Map/PNG/Retina/banner.png
-  artifactKey: Guid(cde4d26f5f23eb205af435c51d8f849f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/banner.png using Guid(cde4d26f5f23eb205af435c51d8f849f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '744353d4440df6c7f018d8d392e4b2f9') in 0.006472 seconds
-  Import took 0.010245 seconds .
+  Time since last request: 0.000190 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (15).png
+  artifactKey: Guid(95ae0e23d775d0e1c899aa60fac1b723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (15).png using Guid(95ae0e23d775d0e1c899aa60fac1b723) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1593b141ebcfbc2d1f37176cec04f1d3') in 0.005963 seconds
+  Import took 0.010243 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000251 seconds.
-  path: Assets/Assets/Map/PNG/Retina/bush.png
-  artifactKey: Guid(0d6e0386976ba5beebc2a36627133aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/bush.png using Guid(0d6e0386976ba5beebc2a36627133aab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c961852f85701e0c12dc26d2ec06b88') in 0.006653 seconds
-  Import took 0.010904 seconds .
+  Time since last request: 0.000243 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (3).png
+  artifactKey: Guid(87186dcfffc18542cbf31d7dc3971417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (3).png using Guid(87186dcfffc18542cbf31d7dc3971417) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93df805f8c74a2ccad467e7731767beb') in 0.005500 seconds
+  Import took 0.009851 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/Assets/Map/PNG/Retina/bridge.png
-  artifactKey: Guid(a821f85645da5569c90fbb05a240b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/bridge.png using Guid(a821f85645da5569c90fbb05a240b8ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1526abd35b25fd3be5f7b731b04fad2a') in 0.008055 seconds
-  Import took 0.012085 seconds .
+  Time since last request: 0.000170 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (1).png
+  artifactKey: Guid(b0b48176337af87c7b735ee8513899d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (1).png using Guid(b0b48176337af87c7b735ee8513899d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33c0322fb749b7df4c7f4730b36d6243') in 0.006144 seconds
+  Import took 0.010204 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowEnd.png
-  artifactKey: Guid(92e0561b98471ea99849a8218a0211f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowEnd.png using Guid(92e0561b98471ea99849a8218a0211f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae863b85c996ed82bd6ffdaddb7f0ae8') in 0.007445 seconds
-  Import took 0.011462 seconds .
+  Time since last request: 0.000227 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/flag (3).png
+  artifactKey: Guid(39956eba6e8842ba7b98997a94189220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/flag (3).png using Guid(39956eba6e8842ba7b98997a94189220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85ccd9aedc57d69ce25f9d89c10e46d') in 0.004243 seconds
+  Import took 0.008160 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/Assets/Map/PNG/Retina/cactus.png
-  artifactKey: Guid(0964a455e3bdd9b6fa7577cd235ccff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/cactus.png using Guid(0964a455e3bdd9b6fa7577cd235ccff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '902e06dfc192943a70535137c31447e1') in 0.006356 seconds
-  Import took 0.010226 seconds .
+  Time since last request: 0.000246 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/flag (5).png
+  artifactKey: Guid(2f4f4297f94a0e8d5a0c73de179c789f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/flag (5).png using Guid(2f4f4297f94a0e8d5a0c73de179c789f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '582f16dc30ea5ec8fe859360bc744f56') in 0.006270 seconds
+  Import took 0.010260 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000279 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowSplit.png
-  artifactKey: Guid(80f7c854170596bc38abba9adb031311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowSplit.png using Guid(80f7c854170596bc38abba9adb031311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55afdc71440c434445049f87111489bc') in 0.006271 seconds
-  Import took 0.009823 seconds .
+  Time since last request: 0.000247 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (16).png
+  artifactKey: Guid(b9a8cf706a38e3374b018012e1eec7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (16).png using Guid(b9a8cf706a38e3374b018012e1eec7bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '447bb51efe7b78b91616737f377251e4') in 0.004892 seconds
+  Import took 0.008616 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000203 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowStraight.png
-  artifactKey: Guid(ca9736739ed4806b98683824c32efaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowStraight.png using Guid(ca9736739ed4806b98683824c32efaad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93bfba5bd7f065a27c718ff64c1d5f75') in 0.007054 seconds
-  Import took 0.010665 seconds .
+  Time since last request: 0.000219 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (6).png
+  artifactKey: Guid(e222b9714e662040f933b114d5a787ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (6).png using Guid(e222b9714e662040f933b114d5a787ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e971bb4890fd74ee37e9ba58c73e3e42') in 0.005563 seconds
+  Import took 0.009971 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowCornerSquare.png
-  artifactKey: Guid(67957d78c7a02401782f18a02e2b54bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowCornerSquare.png using Guid(67957d78c7a02401782f18a02e2b54bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39fd93befecbd0caf37299832fab393') in 0.006846 seconds
-  Import took 0.011280 seconds .
+  Time since last request: 0.000230 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (3).png
+  artifactKey: Guid(2cad45a109169faa48df9736fec19be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (3).png using Guid(2cad45a109169faa48df9736fec19be4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75aba496050e8683dbcd3f6a9996a476') in 0.005674 seconds
+  Import took 0.009845 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Assets/Map/PNG/Retina/arrowCorner.png
-  artifactKey: Guid(e7b62aca1b9cf49e093a3c7018c31983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Map/PNG/Retina/arrowCorner.png using Guid(e7b62aca1b9cf49e093a3c7018c31983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a91a15b8f6bd9a7634a88e047d13ebd0') in 0.007392 seconds
-  Import took 0.011261 seconds .
+  Time since last request: 0.000235 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (4).png
+  artifactKey: Guid(d2be4d93c07bf8dde9b59f3848a5b09f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullLarge (4).png using Guid(d2be4d93c07bf8dde9b59f3848a5b09f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4a579da21eba5068e911697cb51c12a') in 0.005331 seconds
+  Import took 0.009126 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 151.847420 seconds.
-  path: Assets/Assets/Logo.png
-  artifactKey: Guid(2429aa250df5e8fdb85c853b47a21717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Logo.png using Guid(2429aa250df5e8fdb85c853b47a21717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b207e4dd0a81f85ae65ea5160556b884') in 0.017381 seconds
-  Import took 0.021802 seconds .
+  Time since last request: 0.000166 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/crew (4).png
+  artifactKey: Guid(9cd6018522c057f07bf4d32ccdf1d509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/crew (4).png using Guid(9cd6018522c057f07bf4d32ccdf1d509) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ab99937030d678e364d202d61668d4b') in 0.005501 seconds
+  Import took 0.009590 seconds .
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.43 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 49.5 MB.
-System memory in use after: 49.5 MB.
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (7).png
+  artifactKey: Guid(e6bbc340b48ce131cb4830b839da0a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (7).png using Guid(e6bbc340b48ce131cb4830b839da0a28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe4eba79d5906c531472879c69a5bc86') in 0.004871 seconds
+  Import took 0.008980 seconds .
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2542.
-Total: 3.725408 ms (FindLiveObjects: 0.282838 ms CreateObjectMapping: 0.086029 ms MarkObjects: 3.208003 ms  DeleteObjects: 0.145380 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/nest.png
+  artifactKey: Guid(752925173b8e0f87c9fccd7257d948f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/nest.png using Guid(752925173b8e0f87c9fccd7257d948f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04cc2185d3b94ec38e0d332dc56c94df') in 0.005834 seconds
+  Import took 0.009767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000161 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (3).png
+  artifactKey: Guid(c58c9d892edb4e8e19e9d394345c75f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/sailLarge (3).png using Guid(c58c9d892edb4e8e19e9d394345c75f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfa9046a4160bc3c14362cd03407aafa') in 0.004903 seconds
+  Import took 0.008666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (4).png
+  artifactKey: Guid(03d5782f11753139aab0c2f348634f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/hullSmall (4).png using Guid(03d5782f11753139aab0c2f348634f9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbd0b6db385aef86eb5b6e8b4e665fdf') in 0.006604 seconds
+  Import took 0.010959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Assets/Ships/PNG/Retina/Ship parts/cannon.png
+  artifactKey: Guid(19af08e27f9c0cba9ae1932037f0c3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/PNG/Retina/Ship parts/cannon.png using Guid(19af08e27f9c0cba9ae1932037f0c3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '889cb962caa298abc56896e14caca933') in 0.006470 seconds
+  Import took 0.010310 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.001221 seconds.
+Registered in 0.000707 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.59 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.63 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.148 seconds
+- Completed reload, in  0.915 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.58 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.50 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2007 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 88.4 MB.
-System memory in use after: 88.4 MB.
+System memory in use before: 88.1 MB.
+System memory in use after: 88.1 MB.
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2546.
-Total: 3.900521 ms (FindLiveObjects: 0.262267 ms CreateObjectMapping: 0.083982 ms MarkObjects: 3.032581 ms  DeleteObjects: 0.520369 ms)
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.76 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 48.7 MB.
-System memory in use after: 48.7 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2546.
-Total: 3.431115 ms (FindLiveObjects: 0.346697 ms CreateObjectMapping: 0.081346 ms MarkObjects: 2.844671 ms  DeleteObjects: 0.156661 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2505.
+Total: 3.150588 ms (FindLiveObjects: 0.344800 ms CreateObjectMapping: 0.075726 ms MarkObjects: 2.597820 ms  DeleteObjects: 0.130983 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 197.460965 seconds.
-  path: Assets/Assets/Logo.png
-  artifactKey: Guid(2429aa250df5e8fdb85c853b47a21717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Assets/Logo.png using Guid(2429aa250df5e8fdb85c853b47a21717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e614a5c9ba7f64885eb4e1ce5e99841') in 0.053609 seconds
-  Import took 0.057458 seconds .
+  Time since last request: 125.749510 seconds.
+  path: Assets/Assets/Map/Textures/parchmentAncient.png
+  artifactKey: Guid(0870d6a65408969ecab8831080422c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Map/Textures/parchmentAncient.png using Guid(0870d6a65408969ecab8831080422c07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2435faf24c465c1575641f43b827db2e') in 0.061492 seconds
+  Import took 0.070919 seconds .
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.69 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 10 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 48.8 MB.
-System memory in use after: 48.8 MB.
+Received Import Request.
+  Time since last request: 0.000315 seconds.
+  path: Assets/Assets/Map/Textures/parchmentCrinkled.png
+  artifactKey: Guid(b8e10fa8c082c00ac8ae43b444b83ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Map/Textures/parchmentCrinkled.png using Guid(b8e10fa8c082c00ac8ae43b444b83ddd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '047006b5c13d35cca2a1476b9f132caa') in 0.010488 seconds
+  Import took 0.013953 seconds .
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2547.
-Total: 3.574604 ms (FindLiveObjects: 0.285281 ms CreateObjectMapping: 0.077871 ms MarkObjects: 3.087415 ms  DeleteObjects: 0.121421 ms)
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Assets/Map/Textures/parchmentFoldedCrinkled.png
+  artifactKey: Guid(fe80162838085c21fb8502906db30e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Map/Textures/parchmentFoldedCrinkled.png using Guid(fe80162838085c21fb8502906db30e21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8af7377aeb07053937b52b46e8ed194a') in 0.011027 seconds
+  Import took 0.015244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Assets/Map/Textures/parchmentFolded.png
+  artifactKey: Guid(332ddd7dc8cc05610842cdaf4f9141bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Map/Textures/parchmentFolded.png using Guid(332ddd7dc8cc05610842cdaf4f9141bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a494452b0ff19a181b744474a4796950') in 0.009796 seconds
+  Import took 0.013358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/Assets/Map/Textures/parchmentBasic.png
+  artifactKey: Guid(79c71927821bf57d4852ff217b1ac737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Map/Textures/parchmentBasic.png using Guid(79c71927821bf57d4852ff217b1ac737) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2f778e9663dae7da113256eb3f395d2') in 0.009359 seconds
+  Import took 0.012556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.625378 seconds.
+  path: Assets/Assets/Characters/Kailani.png
+  artifactKey: Guid(24d8670e6ba7a1d57ae9e182f808416b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Characters/Kailani.png using Guid(24d8670e6ba7a1d57ae9e182f808416b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb72ad772bff5d26572d79f9c9b66bd') in 0.013254 seconds
+  Import took 0.017042 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.982193 seconds.
+  path: Assets/Assets/Ships/Tilesheet/tiles_sheet.png
+  artifactKey: Guid(b7973e8b97f10c874b94739cd9e531c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Ships/Tilesheet/tiles_sheet.png using Guid(b7973e8b97f10c874b94739cd9e531c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cffa5415c0b007d455934cf21630c6d') in 0.107926 seconds
+  Import took 0.113137 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

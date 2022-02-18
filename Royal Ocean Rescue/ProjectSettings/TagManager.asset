@@ -12,6 +12,8 @@ TagManager:
   - DropOff
   - TalkZone
   - RowBoat
+  - Exit
+  - Target
   layers:
   - Default
   - TransparentFX
@@ -21,7 +23,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Sand
   - 
   - 
   - 

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6754034018382648157}
   - component: {fileID: 6754034018382648158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,11 +94,15 @@ GameObject:
   - component: {fileID: 6754034018542765666}
   - component: {fileID: 9013877635286395916}
   - component: {fileID: 6754034018542765665}
+  - component: {fileID: 1589250927191380661}
+  - component: {fileID: -1857852788784019973}
+  - component: {fileID: 6986438175068213631}
   - component: {fileID: 6754034018542765668}
   - component: {fileID: 7924042596010647032}
   - component: {fileID: 2349540612667157926}
   - component: {fileID: 1305601073457496188}
-  m_Layer: 0
+  - component: {fileID: 4122878198686062638}
+  m_Layer: 8
   m_Name: RowBoat
   m_TagString: RowBoat
   m_Icon: {fileID: 0}
@@ -160,7 +164,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 100
+  m_Mass: 0.01
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -181,18 +185,94 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd3ef891e534a107822cee0641943b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shipToFollow: {fileID: 0}
-  shipRotation: {fileID: 0}
-  ownRear: {fileID: 1823862638548049356}
-  rigidbody2D: {fileID: 0}
-  person: {fileID: 6544070745111153872, guid: 441a30865b0fd69949aa7b0b2b179507, type: 3}
-  health: 2
-  spriteRenderer: {fileID: 6754034018382648158}
   healedSprite: {fileID: 21300000, guid: 25a93a8d87dc193128102e0da66baaff, type: 3}
   damagedSprite: {fileID: 21300000, guid: af44da904b184ae68831e6e982578bb5, type: 3}
-  _position: 0
   death: {fileID: 1305601073457496188}
   celebrate: {fileID: 2349540612667157926}
+--- !u!114 &1589250927191380661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754034018542765664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  graphMask:
+    value: -1
+--- !u!114 &-1857852788784019973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754034018542765664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6eb1402c17e84a9282a7f0f62eb584f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 5
+  radius: 0.1
+  height: 2
+  canMove: 1
+  maxSpeed: 5
+  gravity: {x: NaN, y: NaN, z: NaN}
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  centerOffsetCompatibility: NaN
+  repathRateCompatibility: NaN
+  canSearchCompability: 0
+  orientation: 1
+  enableRotation: 1
+  autoRepath:
+    mode: 2
+    interval: 0.5
+    sensitivity: 10
+    maximumInterval: 4
+    visualizeSensitivity: 0
+  targetCompatibility: {fileID: 0}
+  maxAcceleration: -2.5
+  rotationSpeed: 360
+  slowdownDistance: 0.6
+  pickNextWaypointDist: 8
+  endReachedDistance: 0.2
+  alwaysDrawGizmos: 0
+  slowWhenNotFacingTarget: 1
+  whenCloseToDestination: 0
+  constrainInsideGraph: 0
+--- !u!114 &6986438175068213631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754034018542765664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9679e68a0f1144e79c664d9a11ca121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  target: {fileID: 0}
 --- !u!96 &6754034018542765668
 TrailRenderer:
   serializedVersion: 2
@@ -475,7 +555,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 30f315c8f8ec6336eb5d58d1d65ac918, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.261
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -655,6 +735,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &4122878198686062638
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6754034018542765664}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.11}
+  serializedVersion: 2
+  m_Radius: 0.05
 --- !u!1 &6771459475966637550
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,7 +761,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2838643109661919088}
   - component: {fileID: 5087641143115148626}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: crew (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -746,7 +842,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1823862638548049356}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rear
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}

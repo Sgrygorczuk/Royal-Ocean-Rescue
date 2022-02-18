@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -58,10 +59,10 @@ public class PlayerShoot : MonoBehaviour
         //Make sure it moves in the direction that the ship is turned towards 
         instantiate.SetPosition(_shootingDirection
             ? new Vector2(Mathf.Cos((Mathf.PI / 180) * transform.rotation.eulerAngles.z),
-                Mathf.Sin((Mathf.PI / 180) * transform.rotation.eulerAngles.z))
+                    Mathf.Sin((Mathf.PI / 180) * transform.rotation.eulerAngles.z))
             : new Vector2(-Mathf.Cos((Mathf.PI / 180) * transform.rotation.eulerAngles.z),
-                -Mathf.Sin((Mathf.PI / 180) * transform.rotation.eulerAngles.z)));
-        
+                    -Mathf.Sin((Mathf.PI / 180) * transform.rotation.eulerAngles.z)));
+
         //Make sure it moves as fast as the ship was moving
         instantiate.GetComponent<Rigidbody2D>().velocity = transform.GetComponent<Rigidbody2D>().velocity;
     }
@@ -71,6 +72,7 @@ public class PlayerShoot : MonoBehaviour
     public void ChangeShootingDirection()
     {
         _shootingDirection = !_shootingDirection;
+
         SetColor();
     }
 

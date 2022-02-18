@@ -1,77 +1,60 @@
-using System;
 using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private PlayerController _playerController;
-    private PlayerShoot _playerShoot;
-    private TalkController _talkController;
-    public int gameState = 0;
+    //============ Other Player Scripts 
+    private PlayerController _playerController; //Controls the player movement 
+    private PlayerShoot _playerShoot;           //Controls player shooting 
 
+    //==================================================================================================================
+    // Functions 
+    //==================================================================================================================
+    
+    //Connect to the scrpits 
     private void Awake()
     {
         _playerController = GetComponent<PlayerController>();
         _playerShoot = GetComponent<PlayerShoot>();
-        _talkController = GetComponent<TalkController>();
-
     }
 
-    // Update is called once per frame
-    private void Update()
+    // Checks for player actions 
+    public void PlayerUpdate()
     {
+        //Set the speed to zero 
+        var inputVector = Vector2.zero;
 
-        switch (gameState)
-        {
-            case 0:
-            {
-                var inputVector = Vector2.zero;
-
-                inputVector.x = Input.GetAxis("Horizontal");
-                inputVector.y = Input.GetAxis("Vertical");
+        //Check for player actions 
+        inputVector.x = Input.GetAxis("Horizontal");
+        inputVector.y = Input.GetAxis("Vertical");
         
-                _playerController.SetInput(inputVector);
+        //Update those speed 
+        _playerController.SetInput(inputVector);
 
-                if (Input.GetButtonDown("Fire1"))
-                {
-                    _playerShoot.SpawnCannon();
-                }
+        //If player shoots shoot 
+        if (Input.GetButtonDown("Fire1")) { _playerShoot.SpawnCannon(); }
         
-                if(Input.GetButtonDown("Fire2")){_playerShoot.ChangeShootingDirection();}
-                break;
-            }
-            case 1:
-            {
-                if (Input.GetButtonDown("Fire1"))
-                {
-                    _talkController.PlayAudio();
-                    if (_talkController.Done())
-                    {
-                        EndDialogue();
-                        break;
-                    }
-                    _talkController.NextSentence();
-                }
-                
-                break;
-            }
-        }
+        //Changes player shooting side 
+        if(Input.GetButtonDown("Fire2")){_playerShoot.ChangeShootingDirection();}
     }
-
-    public void EndDialogue()
-    {
-        gameState = 0;
-        _talkController.SetCanvas(false);
-    }
-
+    
+    //Checks if player has collided with a Talk Zone, if so stops the boat and gives the controls over to it 
     private void OnTriggerEnter2D(Collider2D hitBox)
     {
+
+        if (hitBox.CompareTag($"Exit"))
+        {
+            GameObject.Find($"Main_Camera").GetComponent<GameFlow>().EndGame();
+        }
+
         if (!hitBox.CompareTag($"TalkZone")) return;
+        //Stop Moving 
         var inputVector = Vector2.zero;
         _playerController.SetInput(inputVector);
-        _talkController.LoadText(hitBox.GetComponent<TalkZone>().sentences, hitBox.GetComponent<TalkZone>().sprite);
         hitBox.GetComponent<BoxCollider2D>().enabled = false;
-        _talkController.SetCanvas(true);
-        _talkController.NextSentence();
-        gameState = 1;
+        
+        //Start the talking 
+        GameObject.Find($"Main_Camera").GetComponent<GameFlow>().EnterDialogue(
+            hitBox.GetComponent<TalkZone>().sentences, hitBox.GetComponent<TalkZone>().sprite);
     }
+    
 }

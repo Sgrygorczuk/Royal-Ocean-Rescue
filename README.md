@@ -1,6 +1,6 @@
 # Royal Ocean Rescue
 
-![Royal Ocean Rescue](https://img.itch.zone/aW1nLzc5OTg2NTEuZ2lm/original/NUzxwr.gif)
+![Royal Ocean Rescue](https://orczuk.github.io/images/games/royaloceanrescue.png)
 
 Sail in the Western Seas of Ado as the newest member of the Sea Horses, a highly specialized rescue branch of the navy. Prepare for the treacherous combat that you will be faced with, on the open seas. But most importantly make sure to save every person, because you are a  Sea Horse! 
 
